@@ -20,6 +20,35 @@ Step 5: Convert to RxCUI Representation
 Step 6: Normalize to Specific RxCUI
 	Eg) Sulfasalazine 500 MG Oral Tablet [AZULFIDINE] RxCUI=208437::SBD
 
+
+########
+Building
+########
+
+export UIMA_HOME=/path/to/apache-uima
+export PATH=$PATH:"$UIMA_HOME"/bin
+
+export PIPELINE_ROOT=/path/to/MedXN
+
+export UIMA_CLASSPATH=${PIPELINE_ROOT}/target/classes
+export UIMA_CLASSPATH=${UIMA_CLASSPATH}:${PIPELINE_ROOT}/resources
+export UIMA_CLASSPATH=${UIMA_CLASSPATH}:${PIPELINE_ROOT}/desc
+export UIMA_CLASSPATH=${UIMA_CLASSPATH}:${PIPELINE_ROOT}/descsrc
+export UIMA_CLASSPATH=${UIMA_CLASSPATH}:${PIPELINE_ROOT}/medtaggerdescsrc
+export UIMA_CLASSPATH=${UIMA_CLASSPATH}:${PIPELINE_ROOT}/MedXN-1.0.1.jar
+export UIMA_CLASSPATH=${UIMA_CLASSPATH}:${PIPELINE_ROOT}/lib
+
+export INPUT_DIR=/path/to/input/documents
+export OUTPUT_DIR=/path/to/output/
+
+mvn package
+
+"$UIMA_HOME"/bin/runAE.sh \
+    ${PIPELINE_ROOT}/desc/medxndesc/aggregate_analysis_engine/MedXNAggregateTAE.xml \
+    INPUT_DIR \
+    OUTPUT_DIR
+
+
 ######################################
 Sub directories included in MedXN v1.0
 ######################################
