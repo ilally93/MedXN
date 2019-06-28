@@ -9,7 +9,7 @@
                 <nameValuePair>
                     <name>InputDirectory</name>
                     <value>
-                        <string>testdata</string>
+                        <string>testdata/input</string>
                     </value>
                 </nameValuePair>
             </configurationParameterSettings>
@@ -43,7 +43,7 @@
                 <nameValuePair>
                     <name>OutputFile</name>
                     <value>
-                        <string>/tmp/testdata.out</string>
+                        <string>testdata/out/medTestOutput.txt</string>
                     </value>
                 </nameValuePair>
             </configurationParameterSettings>
