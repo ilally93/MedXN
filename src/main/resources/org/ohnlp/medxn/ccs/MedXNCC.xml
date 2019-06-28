@@ -25,7 +25,7 @@
       <nameValuePair>
         <name>OutputFile</name>
         <value>
-          <string>C:\Temp\zz.out</string>
+          <string>/testdata/out/system/testdataOutput.txt</string>
         </value>
       </nameValuePair>
       <nameValuePair>
