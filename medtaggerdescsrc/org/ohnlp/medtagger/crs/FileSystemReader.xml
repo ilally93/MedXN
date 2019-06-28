@@ -51,7 +51,7 @@
       <nameValuePair>
         <name>InputDirectory</name>
         <value>
-          <string>testdata/medtaggertest</string>
+          <string>testdata/input</string>
         </value>
       </nameValuePair>
       <nameValuePair>
