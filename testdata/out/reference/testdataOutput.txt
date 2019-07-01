@@ -1,0 +1,3 @@
+data_medications_001.txt|Ofloxacin::0::9|7623|200 mg::10::16|||p.o.::17::21|||Ofloxacin 200 MG|316400|Ofloxacin 200 mg p.o. q 12
+data_medications_001.txt|klonopin::28::36|202585||one::37::40|tablet::41::47||twice-a-day::48::59|2 weeks::64::71|||klonopin one tablet twice-a-day for 2 weeks
+data_medications_001.txt|Coumadin::96::104|202421|10mg::116::120|||PO::121::123|qDay::124::128|1 week::133::139|||After 12/5 INR at 1.5, Coumadin was set to 10mg PO qDay for 1 week, followed by new INR.
